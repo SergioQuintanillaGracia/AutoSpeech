@@ -1,7 +1,7 @@
+import sounddevice
 import speech_recognition as sr
 import subprocess
 import os
-os.environ["ALSA_WARNINGS"] = "0"
 
 def recognize_speech_from_mic(recognizer, microphone):
     with microphone as source:
